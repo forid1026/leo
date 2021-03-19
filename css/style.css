@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rufina:400,700&display=swap");
+.container{
+    margin-bottom: 80px;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+
+}
+/* Resuable Component */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rufina', serif;
+  font-weight: 700;
+}
+section {
+  display: block;
+  padding: 50px 0;
+  width: 100%;
+}
+.btn{
+  padding: 20px 15px;
+  background: #ff817e;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 0.8;
+  text-transform: uppercase;
+  min-width: 170px;
+}
+.btn:hover{
+  color: #000;
+}
+.btn-rounded{
+  border-radius: 50px !important;
+}
+.btn-rounded-dark{
+  padding: 16px;
+  background: #30383b;
+  color: #fff;
+  border-radius: 50px;
+}
+.btn-rounded-dark:hover{
+  background:  #ff817e;
+  color: #fff;
+  
+}
+h2{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.card{
+  border: 1px solid #e3e6ea;
+  padding: 10px;
+  
+}
+.card-footer{
+  border-top: none;
+  background: #fff;
+}
+
+
+
+/* NAVIGATION */
+
+nav img{
+  width: 100px;
+}
+.navbar-light .navbar-toggler {
+  color: #eb7a77 !important;
+  margin-top: 30px;
+}
+.navbar-nav{
+  margin-left: 12%;
+  z-index: 2;
+}
+.navbar-nav .nav-link{
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+  
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #000;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #ff817e;
+}
+/* Banner Section */
+#banner{
+  margin-top: -4%;
+}
+#banner h6{
+  color: #eb7a77;
+  font-size: 14px;
+  font-family: 'Rufina', sans-serif;
+  margin-bottom: 20px;
+  letter-spacing: 1.5;
+}
+#banner h2{
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+#banner p{
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 50px;
+}
+#banner .spa-img{
+    width: 43%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* ABOUT SECTION */
+ #about [class|=flower] {
+  position: absolute;
+}
+  #about .flower-1 {
+    left: 16%;
+    max-width: 160px;
+
+  
+  }
+  
+  #about .butterfly{
+      max-width: 84px;
+      margin: 0 48px auto;
+      margin-bottom: 20px;
+  }
+  #about h5{
+    font-size: 25px;
+    color: #888;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  #about h2{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+
+  }
+  #about p{
+    font-size: 14px;
+    padding: 0 95px;
+    margin-bottom: 20px;
+    text-align: center;   
+  }
+
+/* Collection Section */
+#services .card {
+    position: relative;
+    border: none;
+    padding: 0%;
+    margin-right: 3px;
+  }
+  
+  .body-treatment {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #eb7a77;
+  }
+  .overlay img{
+    width: 40% !important;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  #services .card:hover .overlay {
+    opacity: 1;
+  }
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  /* Team member */
+  
+  #experience .card{
+    padding: 30px;
+    box-shadow: 5px 5px 10px lightgray;
+    background: #ffffff;
+    z-index: 1;
+    width: 300px;
+    height: 100px;
+    border: none;
+    margin-top: -80px !important;
+    margin: auto;
+  }
+   #experience .member-info{
+    padding: 30px;
+    box-shadow: 5px 5px 10px lightgray;
+    background: #ffffff;
+    z-index: 9999;
+    width: 300px;
+    height: 200px;
+    border: none;
+    margin-top: -80px !important;
+    margin-left: -30px;
+    visibility: hidden;
+    /* -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out; */
+  } 
+  #experinece .member-info h6,span{
+    visibility: visible;
+  }
+.member-info h6{
+  visibility: visible;
+  margin-top: 30px;
+}
+  #experience  .social-icon a:hover{
+    background: #eb7a77;
+    border: 1px solid #eb7a77;
+    color: #ffffff;
+  }
+  #experience  .social-icon a{
+    margin-right: 9px;
+    padding: 6px 8px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-size: 15px;
+    color: #000;    
+  }
+ #experience .team-member .social-icon{
+   margin-top: 20px;
+   visibility: hidden;
+  
+} 
+ #experience .team-member:hover .social-icon{
+  visibility: visible;
+}
+ #experience .team-member:hover .member-info{
+  visibility: visible;
+}
+
+/* CONTACT SECTION */
+ #contact i{
+   height: 30px;
+   width: 30px;
+   padding:7px;
+  background: #ff817e;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+input[type="text"]{
+  margin-bottom: 15px;
+  padding: 25px;
+}
+textarea{
+  padding: 25px;
+  margin-bottom: 10px;
+}
+ #contact address {
+  color: #888;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 80px;
+}
+#contact address a {
+  color: #888;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+/* Footer */
+#footer{
+  background: #FFF9F8;
+}
+#footer img{
+  width: 10%;
+  margin: auto;
+}
+
+#footer  ul a{
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 50px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+}
+ #footer p {
+  font-size: 16px;
+  color: dimgrey;
+  text-transform: uppercase;
+}
+#footer span a{
+  margin-right: 5px;
+  text-decoration: none;
+  color: #eb7a77;
+}
+#footer  ul a:hover{
+  color: #eb7a77;
+}
+#footer .social-icon a{
+  text-decoration: none;
+}
+#footer .social-icon i{
+  border-right: 1px solid #b1b4bb;
+  color: #3a414e;
+  display: inline-block;
+  font-size: 14px;
+  line-height: .8;
+  padding: 0 10px;
+}
+#footer .social-icon i:hover{
+  color: #eb7a77;
+}

@@ -1,0 +1,27 @@
+/* Media Query */
+  
+    @media screen and (max-width: 991px) {
+      #banner {
+        padding-top: 50px;
+      }
+      #banner .spa-img{
+        display: none;
+      }
+    }
+    @media screen and (max-width: 767px){
+      .flower-1{
+        display: none;
+      }
+      #about p{
+        padding:  0 20px;
+      }
+      #about{
+        margin-top: -5rem;
+      }
+    }
+    @media screen and (max-width: 575px){
+      #footer ul{
+        display: none;
+      }
+
+    }
